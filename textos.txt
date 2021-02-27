@@ -1,0 +1,30 @@
+
+
+
+<button>
+                                    <a href="{{url('excluir/'.$pro->id)}}">
+                                        Excluir
+                                    </a>
+                                </button>
+
+@foreach($produto as $pro)
+
+    <?php
+        echo($pro->id_imagem)
+     ?>   
+    
+    <br>
+
+    <?php
+        echo($imagem[$pro->id_imagem]->imagem)
+    ?>
+    <br>
+
+@endforeach
+
+<pre>
+    <?php
+        
+        print_r($quantidade);
+    ?>
+</pre>
